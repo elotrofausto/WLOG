@@ -1,0 +1,85 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    background-color: #fdfdfd;
+}
+.shadow {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+.btn-danger {
+    color: #fff;
+    background-color: #f00000;
+    border-color: #dc281e;
+}
+.masthead {
+    background: #3398E1;
+    height: auto;
+    padding-bottom: 15px;
+    box-shadow: 0 16px 48px #E3E7EB;
+    padding-top: 10px;
+}
+
+.head_text {
+    color: white;
+}
+
+.card {
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+
+.book_img_list{
+    max-width: 95%;
+}
+
+.list_view_left{
+    max-width: 30%;
+    float: left;
+}
+
+.list_view_left_big{
+    max-width: 60%;
+    float: left;
+}
+
+.full_width{
+    width: 100%;
+}
+
+.indexheader{
+    background-image: url('../../../media/fantasybg.jpg');
+}
+
+/*Fon awesome icons settings*/
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 65px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+    /* Youtube */
+    .fa-youtube {
+        background: red;
+        color: white;
+      }

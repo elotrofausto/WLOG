@@ -1,0 +1,12 @@
+{
+    "SSL_PASSPHRASE":"p21#2019",
+    "PORT": "8844",
+    "REQ_TIME_PERIOD" : "15",
+    "MAX_REQ_PER_IP" : "100",
+    "FETCH_TIME":"15",
+    "POSTGRES_USER":"wlogadmin",
+    "POSTGRES_HOST":"localhost",
+    "POSTGRES_DB":"wlog",
+    "POSTGRES_PW":"wlog12345#",
+    "POSTGRES_PORT":""
+}

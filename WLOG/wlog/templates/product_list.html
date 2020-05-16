@@ -1,0 +1,44 @@
+{% extends "base.html" %} 
+{% block content %}
+<header class="masthead indexheader">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt-3 text-white"> Los libros </h3>
+                    <p class="text-light">Desde la más intensa novela negra a detallados mundos de ciencia ficción y fantasía. ¡Elige el tuyo! &nbsp
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8 mt-3 left">
+            {% for obj in product_list %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">{{ obj.title }}</h2>
+                    <div class="list_view_left">
+                        <p><img class="book_img_list" src="/media/{{ obj.image }}" alt="Portada del libro de Alberto Fausto: {{ object.title }}"/></p>
+                    </div>
+                    <div class="list_view_right">
+                        <p class="card-text text-muted h6">{{ obj.short_description }}</p>
+                        <p class="card-text">{{obj.text|slice:":200" }}</p>
+                        <p class="card-text">ISBN: {{obj.sku}}</p>
+                        <p class="card-text">Año de publicación: {{obj.date_published|date:"Y" }}</p>
+                        <a href="{{ obj.slug }}" class="btn btn-primary">Más información &rarr;</a>
+                        <a target="_blank" class="btn btn-success" href="{{ product.link }}">📖 Hazte con él</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+    </div>
+</div>
+{%endblock%}

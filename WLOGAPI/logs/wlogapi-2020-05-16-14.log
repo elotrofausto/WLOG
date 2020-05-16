@@ -1,0 +1,66 @@
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:16:31"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:17:05"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:17:37"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:17:40"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:18:33"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:18:36"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:19:13"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:19:15"}
+{"message":"TypeError: res.status is not a function\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:134:13)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:19:15"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:19:42"}
+{"message":"TypeError: res.status is not a function\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:134:13)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:19:42"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:19:47"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:20:12"}
+{"message":"TypeError: res is not a function\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:134:9)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:20:12"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:20:16"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:20:18"}
+{"message":"TypeError: Cannot read property 'status' of undefined\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:134:16)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:20:18"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:20:37"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:20:41"}
+{"message":"TypeError: Cannot read property 'json' of undefined\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:134:16)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:20:41"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:21:15"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:21:45"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:21:48"}
+{"message":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:470:11)\n    at ServerResponse.header (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\express\\lib\\response.js:771:10)\n    at ServerResponse.send (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\express\\lib\\response.js:170:12)\n    at ServerResponse.json (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\express\\lib\\response.js:267:15)\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:134:16)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:21:48"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:22:11"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:22:14"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:22:51"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:22:53"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:23:32"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:23:35"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:26:42"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:27:38"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:28:15"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:28:16"}
+{"message":"TypeError: result.status is not a function\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:135:16)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:28:16"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:32:20"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:32:27"}
+{"message":"TypeError: result.status is not a function\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:135:16)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:32:27"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:32:52"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:32:59"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:33:00"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:34:05"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:34:08"}
+{"message":"TypeError: result.status is not a function\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:135:16)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:34:08"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:34:32"}
+{"message":"Postgres: Post fetched - en-marcha-edicion-10-aniversario-el-sindrome-de-korsakoff","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:34:35"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:50:46"}
+{"message":"Postgres: Post created - Test-Post Ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:50:50"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:54:57"}
+{"message":"error: llave duplicada viola restricción de unicidad «blog_post_title_key»\n    at Parser.parseErrorMessage (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg-protocol\\dist\\parser.js:241:15)\n    at Parser.handlePacket (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg-protocol\\dist\\parser.js:89:29)\n    at Parser.parse (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg-protocol\\dist\\parser.js:41:38)\n    at Socket.stream.on (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg-protocol\\dist\\index.js:8:42)\n    at Socket.emit (events.js:198:13)\n    at addChunk (_stream_readable.js:288:12)\n    at readableAddChunk (_stream_readable.js:269:11)\n    at Socket.Readable.push (_stream_readable.js:224:10)\n    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:55:04"}
+{"message":"Postgres: Post deleted - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:56:06"}
+{"message":"ReferenceError: result is not defined\n    at pool.query.then.res (C:\\Users\\elotr\\Desktop\\WLOGAPI\\postgres.js:90:9)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:56:06"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:56:24"}
+{"message":"Postgres: Post created - Test-Post-Ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:56:30"}
+{"message":"Postgres: Post deleted - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:56:38"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:57:17"}
+{"message":"Postgres: Post created - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:57:22"}
+{"message":"Postgres: Post deleted - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:57:41"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:57:58"}
+{"message":"Error: Prepared statements must be unique - 'delete-Post' was used for a different statement\n    at Query.submit (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg\\lib\\query.js:157:14)\n    at Client._pulseQueryQueue (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg\\lib\\client.js:463:43)\n    at Client.query (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg\\lib\\client.js:558:8)\n    at PendingItem.connect [as callback] (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg-pool\\index.js:360:14)\n    at BoundPool._acquireClient (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg-pool\\index.js:270:21)\n    at BoundPool._pulseQueue (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg-pool\\index.js:134:19)\n    at process.nextTick (C:\\Users\\elotr\\Desktop\\WLOGAPI\\node_modules\\pg-pool\\index.js:167:37)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","level":"error","service":"WlogApi","timestamp":"2020-05-16 14:58:05"}
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:58:52"}
+{"message":"Postgres: Post fetched - en-marcha-edicion-10-aniversario-el-sindrome-de-korsakoff","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:59:04"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:59:08"}
+{"message":"Postgres: Post fetched - en-marcha-edicion-10-aniversario-el-sindrome-de-korsakoff","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:59:12"}
+{"message":"Postgres: Post created - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:59:16"}
+{"message":"Postgres: Post deleted - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-16 14:59:20"}

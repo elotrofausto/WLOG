@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header class="masthead indexheader">
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+          <div class=" col-md-8 col-md-10 mx-auto">
+              <div class="site-heading">
+                  <h3 class=" site-heading my-4 mt-3 text-white"></h3>
+                  <p class="text-light">&nbsp</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+        <div class="list_view_left_big">
+          <p><img class="book_img_list" src="/media/{{ page.image }}" alt="Imagen de {{ page.title }}"/></p>
+      </div>
+      <div>
+        <p class="card-text ">{{ page.text | safe }}</p>
+      </div>
+      </div>
+    </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  </div>
+</div>
+
+{% endblock content %}

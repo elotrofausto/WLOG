@@ -1,0 +1,50 @@
+
+        <!-- Sidebar -->
+        {% block sidebar %}
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4 float-right ">
+        <div class="card my-4">
+                <h5 class="card-header">Sabías que...</h5>
+            <div class="card-body">
+                {% if object.related_product %}
+                <p>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ object.related_product.title }}</h2>
+                            <div class="list_view_left">
+                                <p><img class="book_img_list" src="/media/{{ object.related_product.image }}" alt="Portada del libro de Alberto Fausto: {{ object.title }}"/></p>
+                            </div>
+                            <div class="list_view_right">
+                                <p class="card-text text-muted h6">{{ object.related_product.short_description }}</p>
+                                <p class="card-text">{{object.related_product.text|slice:":200" }}</p>
+                                <p class="card-text">ISBN: {{object.related_product.sku}}</p>
+                                <p class="card-text">Año de publicación: {{object.related_product.date_published|date:"Y" }}</p>
+                                <a target="_blank" class="btn btn-success" href="{{ object.related_product.link }}">📖 Hazte con él</a>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+                {% elif object.get_cname == 'Page' %}
+                    <h5>Los libros</h5>
+                    <p class="card-text"> Descubre todos los libros de Alberto Fausto en la página de autor de Amazon. Desde la novela de misterio más apasionante a completos mundos de fantasía y ciencia ficción. ¿Cuál es el tuyo?</p>
+                    <a href="https://www.amazon.es/A.-Fausto-%28Alberto-Fausto%29/e/B006Z0EOF6?ref_=dbs_p_ebk_r00_abau_000000" target="_blank" class="btn btn-danger">Descubrir</a>
+                {% else %}
+                    <h5>El autor</h5>
+                    <p class="card-text"> Miles de lectores han leído ya las novelas de Alberto Fausto, escritor de misterio, fantasía y ciencia ficción. Su trayectoria en el mundo editorial comenzó hace más de 10 años, cuando publicó su primera novela en 2010.</p>
+                    <a href="/page/alberto-fausto-autor/" class="btn btn-danger">Quiero saber más...</a>
+                {% endif %}
+                <hr>
+                <p>
+                    <h5>Redes sociales</h5>
+                    <a href="https://www.facebook.com/albertofaustoescritor/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/elotrofausto" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCINq7sDwfwt4uybJ1Bqj0BA" target="_blank" class="fa fa-youtube"></a>
+                </p>
+            </div>
+        </div>
+        </div>
+        
+        {% endblock sidebar %}

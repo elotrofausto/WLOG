@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header class="masthead indexheader">
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+          <div class=" col-md-8 col-md-10 mx-auto">
+              <div class="site-heading">
+                  <h3 class=" site-heading my-4 mt-3 text-white"></h3>
+                  <p class="text-light">&nbsp</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+        <div class="list_view_left_big">
+          <p><img class="book_img_list" src="/media/{{ object.image }}" alt="Portada del libro de Alberto Fausto: {{ object.title }}"/></p>
+      </div>
+      <div>
+          <p class="card-text text-muted h6">{{ object.short_description }}</p>
+          <p class="card-text">{{object.text|slice:":200" }}</p>
+          <p class="card-text">ISBN: {{object.sku}}</p>
+          <p class="card-text">Año de publicación: {{object.date_published|date:"Y" }}</p>
+          <a target="_blank" class="btn btn-success" href="{{ object.link }}">📖 Hazte con él</a>
+          <br/><br/>
+      </div>
+        <p class="card-text">{{ object.description | safe }}</p>
+      </div>
+    </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  </div>
+</div>
+
+{% endblock content %}
