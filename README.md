@@ -139,11 +139,33 @@ _Este es un proyecto final de grado superior de DAW (Desarrollo de Aplicaciones 
 _Autor:_
 * **Alberto Fausto** - *Trabajo Inicial* - [elotrofausto](https://github.com/elotrofausto/)
 
-## Manual de Usuario ☕
+# Manual de Usuario ☕
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+El siguiente manual de usuario explica cómo gestionar el sistema WLOG. Hay que recordar que WLOG está hecho por y para desarrolladores, por lo que se requieren unos mínimos conocimientos de programación para modificar las plantillas y estilos de la aplicación.
 
+## Accediendo a la aplicación
+
+En modo debug, Django iniciará por defecto la aplicación en [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+## WLOG Admin (Nivel usuario)
+
+Podemos acceder al panel de administración desde [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) con las credenciales del superusuario que creamos durante la instalación. Desde este panel de administración, vamos a poder gestionar de forma muy sencilla:
+
+-Los usuarios
+-Grupos de usuarios
+-Posts
+-Páginas
+-Productos
+
+Una vez empecemos a crear contenido este aparecerá en nuestra web. Podemos comprobarlo accediendo a [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+## Configuraciones avanzadas (Nivel Programador)
+
+El sistema puede ser modificado para adaptarlo a las necesidades de cada usuario adminsitrador. A continuación citamos los cambios más importantes que se pueden aplicar junto con la ruta de los ficheros donde se realizan. Para todos estos apartados hacen falta conocimientos de programación en Python y del Framework Django.
+
+-Configuración -> WLOG/wlog/wlog/settings.py
+-Modelos de la BD-> WLOG/wlog/blog/models.py
+-Url -> WLOG/wlog/wlog/urls.py y WLOG/wlog/blog/urls.py
+-Panel de Administración -> WLOG/wlog/blog/admin.py
+-Plantillas -> WLOG/wlog/templates
 
