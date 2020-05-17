@@ -40,7 +40,8 @@ workon <env_name>
 ```
 
 _Configuramos la conexión a la base de datos en el archivo WLOG/wlog/wlog/settings.py_
-_#Si vamos a trabajar con postgres, no hay que modificar el ENGINE. El puerto lo podemos dejar vacío para el puerto por defecto.
+
+_Si vamos a trabajar con postgres, no hay que modificar el ENGINE. El puerto lo podemos dejar vacío para el puerto por defecto.
 Un ejemplo de configuración sería el siguiente_
 
 ```
@@ -63,6 +64,12 @@ py manage.py makemigrations
 py manage.py migrate
 ```
 
+_Creamos un usuario administrador del sistema. Django nos preguntará por los datos necesarios tras ejecutar el siguiente comando:_
+
+```
+py manage.py createsuperuser
+```
+
 _Ya solamente nos queda iniciar el servidor. Navegamos a WLOG/wlog y escribimos el siguiente comando_
 
 ```
@@ -75,32 +82,55 @@ no lo hace por motivos de seguridad. También será necesario que configuremos l
 
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_Para ejecutar las pruebas unitarias, basta con ejecutar un simple comando desde WLOG/wlog_
 
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
+_Las pruebas unitarias están diseñadas para comprobar que la estructura de la BD es correcta y podemos crear objetos de todas las clases_
 
 ```
-Da un ejemplo
+py manage.py test
 ```
 
-## Despliegue 📦
+## Producción 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_Para desplegar la aplicación Django en producción debemos:_
 
-## Construido con 🛠️
+_1.Configurar el modo DEBUG = False en WLOG/wlog/wlog/manage.py_
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_2.Configurar los ALLOWED_HOSTS en WLOG/wlog/wlog/manage.py_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+_3.Servir los ficheros estáticos con otro servidor de nuestra elección. [Desplegar archivos estáticos en Django](https://docs.djangoproject.com/en/3.0/howto/static-files/deployment/)_
 
 
-## Versionado 📌
+#WLOGAPI
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+En este apartado explicaremos cómo instalar la API complentaria WLOGAPI, que nos permitirá hacer operaciones CRUD sobre nuestros Post desde cualquier lugar.
+
+### Instalación de la API WLOGAPI 🔧
+
+_Una vez tenemos instalado Node.js en nuestro sistema, procederemos a instalar las dependencias de la API y configurarla
+para que pueda correr correctamente_
+
+_Sitúate en la carpeta de tu sistema local donde quieras instalar WLOG y clona el repositorio (si no lo has hecho ya). El punto final del comando hará que se descargue en esa misma carpeta_
+
+```
+git clone https://github.com/elotrofausto/WLOG.git .
+```
+
+_Instalamos las dependencias de Node. Navega a WLOGAPI/ con una consola de comandos y escribe:_
+
+```
+npm i
+```
+
+_El comando anterior descargará e instalará las dependencias de la API. Ahora falta configurar la conexión a la base de datos. Edita el fichero WLOGAPI/config/default.json y añade los parámetros de conexión(los mismos que has utilizado en la aplicación principal)_
+
+_Sólo falta iniciar el servidor de nuestra API con el siguiente comando. Navega con una consola hasta WLOGAPI/ y escribe:_
+
+```
+node index.js
+```
+
+_Para producción, deberíamos utilizar herramientas como pm2 o crear tareas de windows que inicien la API_
 
 ## Autores ✒️
 
