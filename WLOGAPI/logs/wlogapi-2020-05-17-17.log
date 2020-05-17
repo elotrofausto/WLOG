@@ -1,0 +1,6 @@
+{"message":"Successfully connected to Postgres DB","level":"info","service":"WlogApi","timestamp":"2020-05-17 17:25:58"}
+{"message":"Postgres: All Posts fetched","level":"info","service":"WlogApi","timestamp":"2020-05-17 17:50:23"}
+{"message":"Postgres: Post fetched - en-marcha-edicion-10-aniversario-el-sindrome-de-korsakoff","level":"info","service":"WlogApi","timestamp":"2020-05-17 17:50:49"}
+{"message":"Postgres: Post created - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-17 17:51:11"}
+{"message":"Postgres: Post updated - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-17 17:51:57"}
+{"message":"Postgres: Post deleted - test-post-ilerna","level":"info","service":"WlogApi","timestamp":"2020-05-17 17:52:25"}
