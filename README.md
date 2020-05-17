@@ -101,7 +101,7 @@ _2.Configurar los ALLOWED_HOSTS en WLOG/wlog/wlog/manage.py_
 _3.Servir los ficheros estáticos con otro servidor de nuestra elección. [Desplegar archivos estáticos en Django](https://docs.djangoproject.com/en/3.0/howto/static-files/deployment/)_
 
 
-##WLOGAPI
+# WLOGAPI
 
 En este apartado explicaremos cómo instalar la API complentaria WLOGAPI, que nos permitirá hacer operaciones CRUD sobre nuestros Post desde cualquier lugar.
 
