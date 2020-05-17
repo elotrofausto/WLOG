@@ -163,7 +163,7 @@ Podemos acceder al panel de administración desde [http://127.0.0.1:8000/admin](
 
 Una vez empecemos a crear contenido este aparecerá en nuestra web. Podemos comprobarlo accediendo a [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-## Configuraciones avanzadas (Nivel Programador)
+## Configuraciones avanzadas (Conocimientos de programación)
 
 El sistema puede ser modificado para adaptarlo a las necesidades de cada usuario adminsitrador. A continuación citamos los cambios más importantes que se pueden aplicar junto con la ruta de los ficheros donde se realizan. Para todos estos apartados hacen falta conocimientos de programación en Python y del Framework Django.
 
