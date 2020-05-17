@@ -25,19 +25,52 @@ Node.js 12.16.3 -> [https://nodejs.org/es/](https://nodejs.org/es/)
 _Una vez tenemos instalado Postgres y Python en nuestro sistema, procederemos a instalar las dependencias del proyecto y configurarlo
 para que pueda correr correctamente_
 
-_Dí cómo será ese paso_
+_Sitúate en la carpeta de tu sistema local donde quieras instalar WLOG y clona el repositorio. El punto final del comando hará que se
+descargue en esa misma carpeta_
 
 ```
-Da un ejemplo
+git clone https://github.com/elotrofausto/WLOG.git .
 ```
 
-_Y repite_
+_Es conveniente instalar virtualenv y crear un entorno de Python aislado para nuestro proyecto_
 
 ```
-hasta finalizar
+py -m pip install virtualenvwrapper-win
+mkvirtualenv <env_name>
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+_Activammos nuestro virtualenv e instalamos las dependencias en el mismo en lugar de en la instalación global de Python_
+```
+workon <env_name>
+(<env_name>)$ pip install -r WLOG/requirements.txt
+```
+
+_Configuramos la conexión a la base de datos en el archivo WLOG/wlog/wlog/settings.py_
+_#Si vamos a trabajar con postgres, no hay que modificar el ENGINE. El puerto lo podemos dejar vacío para el puerto por defecto.
+Un ejemplo de configuración sería el siguiente_
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'nombre_de_bd',
+        'USER': 'usuario_bd',
+        'PASSWORD': 'password_secreta',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+```
+
+_Ya solamente nos queda probar el servidor. Navegamos a WLOG/wlog y escribimos el siguiente comando_
+
+```
+py manage.py runserver
+```
+
+_Esto iniciará el servidor Django en modo Debug. Podemos cambiarlo a modo producción en el fichero settings.py, pero debemos
+tener en cuenta que tendremos que servir los ficheros estáticos con otro servidor de nuestra elección (Nginx, IIS...) ya que Django
+no lo hace por motivos de seguridad. También será necesario que configuremos los ALLOWED_HOSTS en el fichero manage.py_
 
 ## Ejecutando las pruebas ⚙️
 
