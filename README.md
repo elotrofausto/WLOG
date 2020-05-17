@@ -12,7 +12,7 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 _Antes de clonar el repositorio, deberías satisfacer las siguientes dependencias:_
 
-Postgres 12.3 -> [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
+_Postgres 12.3 -> [https://www.postgresql.org/download/](https://www.postgresql.org/download/)_
 Python 3.8.3  -> [https://www.python.org/downloads/](https://www.python.org/downloads/)
 Node.js 12.16.3 -> [https://nodejs.org/es/](https://nodejs.org/es/) 
 
