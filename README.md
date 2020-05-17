@@ -8,17 +8,20 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 
-### Pre-requisitos 📋
+### Pre-requisitos WLOG y WLOGAPI 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Antes de clonar el repositorio, deberías satisfacer las siguientes dependencias:_
 
 ```
-Da un ejemplo
+Postgres 12.3 -> https://www.postgresql.org/download/
+Python 3.8.3  -> https://www.python.org/downloads/
+Node.js 12.16.3 -> https://nodejs.org/es/ 
 ```
 
-### Instalación 🔧
+### Instalación de la aplicación principal WLOG 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Una vez tenemos instalado Postgres y Python en nuestro sistema, procederemos a instalar las dependencias del proyecto y configurarlo
+para que pueda correr correctamente_
 
 _Dí cómo será ese paso_
 
@@ -46,14 +49,6 @@ _Explica que verifican estas pruebas y por qué_
 Da un ejemplo
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
 ## Despliegue 📦
 
 _Agrega notas adicionales sobre como hacer deploy_
@@ -66,13 +61,6 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 * [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
 
 ## Versionado 📌
 
@@ -80,18 +68,12 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+_Este es un proyecto final de grado superior de DAW (Desarrollo de Aplicaciones Web) para Ilerna_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+_Autor:_
+* **Alberto Fausto** - *Trabajo Inicial* - [elotrofausto](https://github.com/elotrofausto/)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
+## Manual de Usuario ☕
 
 * Comenta a otros sobre este proyecto 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
@@ -99,6 +81,3 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 * etc.
 
 
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
